@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="index.js" type="module"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #app{
+     /* display: inline-flex;*/
+      height: 100%;
+      writing-mode: flex-rl;  
+    }
+    .super-heroes{
+      color:rgb(4, 51, 51);
+      border: 12px solid rgb(55, 71, 149);
+      text-align: center;
+      margin: 14px;
+      padding: 14px;
+      height: 100%;
+    }
+
+  </style>
+  <title>Marvels API</title>
+</head>
+<body style="background-color: rgb(210, 246, 246);">
+  <h1 style="text-align: center;    background-color: #9a00ff;color: aquamarine;">Super Heroes de Marvels Comics.</h1>
+  <div id="app" ></div>
+  
+  <input type="button" value="Recargar" onclick="recargar()"/>
+<!-- Ejemplo Funcion JavaScript -->
+<script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargar(){
+      document.getElementById("caja").innerHTML = "Contenido nuevo";
+  }
+</script>
+<div id="caja">
+  Contenido a cambiar
+</div>
+</body>
+</html>
